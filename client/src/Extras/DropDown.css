@@ -1,0 +1,36 @@
+.dropdownMenu{
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    width: 500px;
+}
+
+.dropdownMenu.active{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    width: 500px;
+}
+
+.dropdownItem{
+    color: black;
+    background-color: white;
+    border: none;
+    display: block;
+}
+
+.dropdownItem:hover{
+    background-color: lightgray;
+}
+
+a{
+    text-decoration: none;
+}

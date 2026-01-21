@@ -1,0 +1,17 @@
+.FooterContainer{
+    display: flex;
+    margin-top: 150px;
+    background-color: lightgray;
+}
+
+.FooterBox{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 100px 100px;
+}
+
+.FooterContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

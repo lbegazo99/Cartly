@@ -1,0 +1,13 @@
+.choices{
+    display: flex;
+    height: 25px;
+    gap: 50px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown{
+    position: relative;
+}

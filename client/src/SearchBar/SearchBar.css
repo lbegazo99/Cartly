@@ -1,0 +1,40 @@
+
+.searchWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+    position: relative;
+}
+
+.searchWrapper input{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px 6px 0 0;
+}
+
+.searchCards{
+    position: absolute;
+    top: 110px;
+    right: 470px;
+    width: 399px;
+    margin-top: 5px;
+    z-index: 1000;
+
+    border: 1px solid #777;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    background: white;
+}
+
+.card{
+    display: flex;
+    height: 25px;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #777;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,43 @@
+p{
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.firstBoxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    height: 200px;
+}
+
+.firstBoxContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstBoxLeagues{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px
+}
+
+.leagueShieldBox{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.leagueShield{
+   width: 100%;
+   height: 100%;
+}
+
+.firstBoxItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
