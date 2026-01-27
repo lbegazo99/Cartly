@@ -1,10 +1,5 @@
 import "./FirstBox.css"
-import NFL from "../assets/NFL.png"
-import NCAA from "../assets/NCAA.png"
-import MLB from "../assets/MLB.png"
-import NBA from "../assets/NBA.png"
-import NHL from "../assets/NHL.png"
-import MLS from "../assets/MLS.png"
+
 
 const FirstBox = () =>{
     return(
@@ -15,42 +10,42 @@ const FirstBox = () =>{
 
                     <div className="firstBoxItem">
                         <div className="leagueShieldBox">
-                            <img className="leagueShield" src={NFL}></img>
+                            <img className="leagueShield" src="./assets/NFL.png"></img>
                         </div>
                         <div className="leagueName">NFL</div>
                     </div>
 
                     <div className="firstBoxItem">
                         <div className="leagueShieldBox">
-                            <img className="leagueShield" src={NCAA}></img>
+                            <img className="leagueShield" src="./assets/NCAA.png"></img>
                         </div>
                         <div className="leagueName">NCAA</div>
                     </div>
 
                     <div className="firstBoxItem">
                         <div className="leagueShieldBox">
-                            <img className="leagueShield" src={MLB}></img>
+                            <img className="leagueShield" src="./assets/MLB.png"></img>
                         </div>
                         <div className="leagueName">MLB</div>
                     </div>
 
                     <div className="firstBoxItem">
                         <div className="leagueShieldBox">
-                            <img className="leagueShield" src={NBA}></img>
+                            <img className="leagueShield" src="./assets/NBA.png"></img>
                         </div>
                         <div className="leagueName">NBA</div>
                     </div>
 
                     <div className="firstBoxItem">
                         <div className="leagueShieldBox">
-                            <img className="leagueShield" src={NHL}></img>
+                            <img className="leagueShield" src="./assets/NHL.png"></img>
                         </div>
                         <div className="leagueName">NHL</div>
                     </div>
 
                     <div className="firstBoxItem">
                         <div className="leagueShieldBox">
-                            <img className="leagueShield" src={MLS}></img>
+                            <img className="leagueShield" src="./assets/MLS.png"></img>
                         </div>
                         <div className="leagueName">MLS</div>
                     </div>

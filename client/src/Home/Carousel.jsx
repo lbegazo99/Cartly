@@ -1,6 +1,3 @@
-import MiamiHurricanes from "../assets/MiamiHurricanes.webp"
-import WiltChamberlain from "../assets/WiltChamberlain.webp"
-import PeteRose from "../assets/PeteRose.jpg"
 import "./Carousel.css"
 import {useState} from "react"
 const Carousel = () => {
@@ -23,13 +20,13 @@ const Carousel = () => {
                     <button onClick={() =>handleClick("next")} className="carousel-button next">&#8658;</button>
                 <ul>
                     <li className={isActive === 1 ? "slide active" : "slide" }>
-                        <img src={MiamiHurricanes} alt="Picture of Carson Beck" style={{height:"500px"}} />
+                        <img src='./assets/MiamiHurricanes.webp' alt="Picture of Carson Beck" style={{height:"500px"}} />
                     </li>
                     <li className={isActive === 2 ? "slide active" : "slide" }>
-                        <img src={WiltChamberlain} alt="Picture of Wilt Chamberlain" />
+                        <img src='./assets/WiltChamberlain.webp' alt="Picture of Wilt Chamberlain" />
                     </li>
                     <li className={isActive === 3 ? "slide active" : "slide" }>
-                        <img src={PeteRose} alt="Picture of Pete Rose" />
+                        <img src='./assets/PeteRose.jpg' alt="Picture of Pete Rose" />
                     </li>
                 </ul>
                 </div>
