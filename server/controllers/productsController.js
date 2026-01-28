@@ -37,7 +37,20 @@ async function getProduct(req,res){
     }
 }
 
+async function getGuestCartProducts(req,res){
+    try {
+        const ids = Array.isArray(req.query.id) ? req.query.id.map(Number) : [Number(req.query.id)]
+        const products = await db.getGuestCartProducts(ids)
+
+        res.json(products)
+    } catch (error) {
+        console.error("Error retrieving product",error)
+        res.status(500).send("Internal Server Error")
+    }
+}
+
 module.exports = {
     getProducts,
-    getProduct
+    getProduct,
+    getGuestCartProducts
 }

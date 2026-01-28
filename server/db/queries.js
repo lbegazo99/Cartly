@@ -80,7 +80,20 @@ async function getProduct(id){
     return result.rows[0];
 }
 
+async function getGuestCartProducts(ids){
+    sql = `
+        SELECT *
+        FROM products
+        WHERE id = ANY($1::int[]);
+    `
+
+
+    const result = await pool.query(sql,[ids])
+    return result.rows;
+}
+
 module.exports = {
     getProducts,
-    getProduct
+    getProduct,
+    getGuestCartProducts
 }

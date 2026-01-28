@@ -2,6 +2,7 @@ import "./Product.css"
 import { useParams } from "react-router-dom"
 import { useEffect,useState } from "react"
 import QuantityDropdown from "./Extras/QuantityDropdown"
+import {addToGuestCart} from "./JSHelpers/addToGuestCart"
 const Product = () =>{
     const {id} = useParams()
     const [error,setError] = useState(null)
@@ -31,6 +32,18 @@ const Product = () =>{
         fetchProductById()
     },[])
 
+    const addToCart = () => {
+        console.log("button clicked")
+        const token = localStorage.getItem("token")
+        if(!token){
+            console.log("guest account")
+            addToGuestCart(id,1);
+            return;
+        }
+    }
+
+
+
     return (
        <div className="ProductContainer">
            <div className="ProductImage">
@@ -54,7 +67,7 @@ const Product = () =>{
                     <div  style={{fontSize:"Larger",width:"100%",paddingLeft:"25px"}}> Quantity</div>
                     <div style={{width:"100%",height:"50px",display:"flex",alignItems:"center",paddingLeft:"25px",gap:"50px"}}>
                         <QuantityDropdown/>
-                        <button className="AddToCartButton">Add to Cart</button>
+                        <button onClick={addToCart} className="AddToCartButton">Add to Cart</button>
                     </div>
                 </div>
            </div>

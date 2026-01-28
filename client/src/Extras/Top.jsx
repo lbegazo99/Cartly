@@ -1,6 +1,6 @@
 import "./Top.css"
 import { MdOutlineShoppingCart } from "react-icons/md";
-
+import {Link} from "react-router-dom"
 const Top = () =>{
    return(
         <div className="header">
@@ -8,7 +8,9 @@ const Top = () =>{
                 <div>Track order</div>
                 <div>Help</div>
                 <div>My Account</div>
-                  <MdOutlineShoppingCart size={30}/>
+                <Link to = "/cart">
+                    <MdOutlineShoppingCart size={30}/>
+                </Link>
             </div>
         </div>
    );
